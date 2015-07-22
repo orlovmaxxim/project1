@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>M-O</title>
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
@@ -15,7 +16,7 @@
 </head>
 <body>
 
-<!--[if lt IE 8]>  
+<!--[if lt IE 7]>  
 	<p class="browsehappy">Пожалуйста, <a href="http://browsehappy.com/">обновите</a> ваш браузер.</p>
 <![endif]-->
 
@@ -31,10 +32,10 @@
   		  		</a>
   	  		</div>
   	  		<div class="social f-r">
-        		<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        		<a class="social-btn social-btn-vk" href="https://vk.com/id202773896">Вконтакте</a>
         		<a class="social-btn social-btn-tw" href="#">Twitter</a>
     	  		<a class="social-btn social-btn-fb" href="#">Facebook</a>
-    	  		<a class="social-btn social-btn-git" href="#">Github</a>
+    	  		<a class="social-btn social-btn-git" href="https://github.com/orlovmaxxim">Github</a>
   	  		</div>
       		<!-- <div class="gradient-border"></div> -->
     		</div>
@@ -48,13 +49,13 @@
   	 				<nav class="navigation">
         			<ul class="main-navigation">
           			<li class="navigation-i">
-          				<a class="active" href="#">Обо мне</a>
+          				<a class="navigation-i-link active" href="#">Обо мне</a>
           			</li>
           			<li class="navigation-i">
-          				<a href="#">Мои работы</a>
+          				<a class="navigation-i-link" href="#">Мои работы</a>
           			</li>
           			<li class="navigation-i">
-          				<a href="#">Связаться со мной</a>
+          				<a class="navigation-i-link" href="#">Связаться со мной</a>
           			</li>
         			</ul> 
       			</nav>
@@ -64,18 +65,21 @@
       						<h2 class="contact-title">Контакты</h2>
       					</li>
       					<li class="contact-list-i">
-              		<a class="contact-details message" href="#">
-              			<span class="contact-details-text">orlov.maxxim@gmail.com</span>
+              		<a class="contact-details message" href="mailto:orlov.maxxim@gmail.com">
+                    <i class="icon icon-email"></i>
+              			<div class="contact-details-text overflow-elips">orlov.maxxim@gmail.com</div>
               		</a>
       					</li>
       					<li class="contact-list-i">
-              		<a class="contact-details tel" href="#">
-              			<span class="contact-details-text">89883145988</span>
+              		<a class="contact-details tel" href="tel:+79883145988">
+                    <i class="icon icon-tel"></i>
+              			<div class="contact-details-text">89883145988</div>
               		</a>
       					</li>
       					<li class="contact-list-i">
-              		<a class="contact-details skype" href="#">
-              			<span class="contact-details-text">maxdv66</span>
+              		<a class="contact-details skype" href="skype:maxdv66">
+                    <i class="icon icon-skype"></i> 
+              			<div class="contact-details-text">maxdv66</div>
               		</a>
       					</li>
       				</ul>
@@ -88,7 +92,7 @@
       				<h2 class="title">Основная информация</h2>
       				<div class="clearfix">
       					<div class="avatar f-l">
-      			 			<img src="img/my-photo.jpg" height="150" width="150" alt="user foto">
+      			 			<img class="avatar-photo" src="img/my-photo.jpg" alt="user foto">
       					</div>
       					<div class="personal-info f-l">
       						<ul class="personal-info-list">
@@ -124,34 +128,26 @@
         		<section class="about-me">
           		<h2 class="title">Опыт работы</h2>
           		<ul class="about-me-list">
-            		<li class="about-me-list-i">
-              		<i class="icon icon-bag"></i>
+            		<li class="about-me-list-i icon-bag">
               		<p class="place">"Soft is Art" - Разработка бизнес-приложений</p>
-              		<span>Сентябрь 2012 - Август 2014</span>
-              		<!-- <p class="period">Сентябрь 2005 - Август 2008</p> -->
+              		<span class="period">Сентябрь 2012 - Август 2014</span>
             		</li>
-            		<li class="about-me-list-i">
-              		<i class="icon icon-bag"></i>
+            		<li class="about-me-list-i icon-bag">
               		<p class="place">"WebFormula" - Контент-менеджер</p>
-              		<span>Сентябрь 2014 - Февраль 2015</span>
-              		<!-- <p class="period">Июнь 2008 - Июль 2010</p> -->
+              		<span class="period">Сентябрь 2014 - Февраль 2015</span>
             		</li>
           		</ul>  
         		</section>
         		<section class="about-me">
           		<h2 class="title">Образование</h2>
           		<ul class="about-me-list">
-            		<li class="about-me-list-i">
-              		<i class="icon icon-hat"></i>
+            		<li class="about-me-list-i icon-hat">
               		<p class="place">Высшее оконченное. ЮФУ</p>
-              		<span>Сентябрь 2009 - Август 2014</span>
-              		<!-- <p class="period">Октябрь 1012 - по настоящее время</p> -->
+              		<span class="period">Сентябрь 2009 - Август 2014</span>
             		</li>
-            		<li class="about-me-list-i">
-              		<i class="icon icon-doc"></i>
+            		<li class="about-me-list-i icon-doc">
               		<p class="place">Курсы Loftschool.ru</p>
-              		<span>Июль 2015 - по настоящее время</span>
-              		<!-- <p class="period">Ноябрь 2014 - по настоящее время</p> -->
+              		<span class="period">Июль 2015 - по настоящее время</span>
             		</li>
           		</ul>
         		</section>
@@ -165,11 +161,10 @@
 		<!-- FOOTER -->
   		<footer class="main-footer">
     		<div class="container clearfix">
-      		<!-- <div class="gradient-border"></div> -->
       		<div class="lock f-l">
       			<a href="#" class="login-lock">Вход</a>
       		</div>
-      		<p class="copyright f-l">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его </p>
+      		<p class="copyright f-l">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
     		</div>
   		</footer>
   	<!-- end FOOTER -->

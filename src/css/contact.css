@@ -1,0 +1,95 @@
+.write-me {
+	width: 650px;
+  /* padding-bottom: 25px; */
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: #eff3f7;
+}
+
+.write-me-title {
+	padding: 40px 0;
+	text-align: center;
+	border-bottom: 17px solid #67dffa;
+	font-size: 27px;
+	font-weight: 400;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	background-color: #48cbe8;
+}
+
+.wrap-form {
+	padding: 0 130px;
+	padding-top: 48px;
+}
+
+/* .input-blocks {
+	padding-top: 1px;
+} */
+
+.input-block {
+	margin-bottom: 15px;
+}
+
+.input-name-block,
+.input-email-block {
+	width: 180px;
+}
+
+.write-me-form-label {
+	font-size: 19px;
+	font-weight: 300;
+	color: #959aa8;
+}
+
+.write-me-form-input {
+	border: 1px solid #48cbe8;
+	border-radius: 3px;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	padding-left: 10px;
+	width: 100%;
+	font-size: 13px;
+	font-weight: 300;
+	color: #48cbe8;
+}
+
+.write-me-form-input::-webkit-input-placeholder { 
+	color: #48cbe8;
+}
+
+.write-me-form-input::-moz-placeholder { 
+	color: #48cbe8;
+}
+
+.captch-block,
+.btns-block {
+	margin-bottom: 5px;
+	outline: 1px solid gold;
+} 
+
+.btn {
+	border: medium none;
+	outline: 0px none;
+	width: 137px;
+	padding: 8px 18px;
+	font-size: 19px;
+	font-weight: 400;
+	border-radius: 4px;
+	color: #fff;
+}
+
+.btn-submit {
+	background: #48cbe8 none repeat scroll 0% 0%;
+	box-shadow: inset 0px -3px 0 0 #3ba8c0;
+}
+
+.btn-reset {
+	background: #849db5 none repeat scroll 0% 0%;
+	box-shadow: inset 0px -3px 0 0 #687b8f;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+	box-shadow: none;
+}  

@@ -1,0 +1,77 @@
+.authorization {
+	width: 590px;
+	margin: 50px;
+	border-radius: 5px;
+	background-color: #eff3f7; 
+	box-shadow: 0px 3px 10px 0px #bec0be;
+}
+
+.authorization-title {
+	padding: 30px 0;
+	text-align: center;
+	border-bottom: 15px solid #67dffa;
+	font-size: 40px;
+	font-weight: 400;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	background-color: #48cbe8;
+}
+
+.wrap-form-authorization {
+	/* padding: 0 200px; */
+	padding-top: 25px;
+}
+
+.authorization-form {
+	width: 422px;
+	margin: 0 auto;
+}
+
+.input-block {
+	width: 422px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+.authorization-form-label {
+	font-size: 36px;
+	font-weight: 300;
+	color: #959aa8;
+}
+
+.authorization-form-input {
+	width: 100%;
+	border: 1px solid #82b2c2;
+	margin-top: 5px;
+	padding-top: 21px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 3px;
+	color: #82b2c2;
+}
+
+.authorization-form-input::-webkit-input-placeholder { 
+	color: #82b2c2;
+	background-color: #fdd5d2;
+}
+
+.authorization-form-input::-moz-placeholder { 
+	color: #82b2c2;
+	background-color: #fdd5d2;
+}
+
+.btn-login {
+	border: medium none;
+	outline: 0px none;
+	width: 137px;
+	padding: 8px 18px;
+	font-size: 36px;
+	font-weight: 400;
+	border-radius: 4px;
+	color: #fff;
+	background: #48cbe8 none repeat scroll 0% 0%;
+	box-shadow: inset 0px -3px 0 0 #3ba8c0;
+}

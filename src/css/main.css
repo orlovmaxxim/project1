@@ -182,7 +182,7 @@ h2 {
   background-color: #3ba8c0;
 }
 
-.navigation-i-link:not([class="active"]):hover {
+.navigation-i-link:not([class="navigation-i-link active"]):hover {
   color: #3ba8c0;
 }
 
@@ -261,6 +261,7 @@ h2 {
 }
 
 .contact-details-text {
+  display: block;
   margin-left: 80px;
   word-break: break-all;
 }
@@ -365,7 +366,7 @@ h2 {
   font-weight: 500;
 }
 
-.personal-info-text span {
+.personal-answer {
   margin-left: 15px;
   font-size: 15px;
   font-weight: 400;
@@ -426,16 +427,21 @@ h2 {
 }
 
 .main-footer .container {
+  position: relative;
   padding-top: 23px;
 }
 
+.lock {
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
 .login-lock {
-	display: inline-block;
-  vertical-align: top;
+	display: block;
   width: 20px;
   height: 32px;
   margin-left: 150px;
-  margin-right: 233px;
   font-size: 0;
   text-decoration: none;
 	background: url(../img/spritesheet.png) -71px -144px no-repeat;
@@ -446,6 +452,9 @@ h2 {
 }
 
 .copyright {
+  margin: 0px 300px;
+  padding-top: 7px;
 	font-size: 13px;
 	font-weight: 300;
+  text-align: center;
 }

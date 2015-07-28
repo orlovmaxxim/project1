@@ -20,6 +20,7 @@
 .wrap-form {
 	padding: 0 130px;
 	padding-top: 48px;
+	padding-bottom: 190px;
 }
 
 /* .input-blocks {
@@ -58,17 +59,45 @@
 	color: #48cbe8;
 }
 
-.write-me-form-input::-moz-placeholder { 
+.write-me-form-input:-moz-placeholder {
 	color: #48cbe8;
 }
 
-.captch-block,
-.btns-block {
-	margin-bottom: 5px;
-	outline: 1px solid gold;
+.captch-block {
+	width: 400px;
+	margin-bottom: 15px;
 } 
 
+.captch {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.captch-pic {
+	overflow: hidden;
+	width: 48%;
+	margin-right: 10%;
+	height: 80px;
+	border: 1px solid #48cbe8;
+	border-radius: 3px;
+	text-align: center;
+	background-color: #FFF;    
+}
+
+.captch-pic-code {
+	padding-top: 20px;
+}
+
+.captch-pswd {
+	width: 38%;
+}
+
+.btns-block {
+	width: 402px;
+}
+
 .btn {
+	position: relative;
 	border: medium none;
 	outline: 0px none;
 	width: 137px;
@@ -78,7 +107,7 @@
 	border-radius: 4px;
 	color: #fff;
 }
-
+ 		
 .btn-submit {
 	background: #48cbe8 none repeat scroll 0% 0%;
 	box-shadow: inset 0px -3px 0 0 #3ba8c0;
@@ -91,5 +120,16 @@
 
 .btn-submit:hover,
 .btn-reset:hover {
+	top: 1px;
 	box-shadow: none;
 }  
+
+.btn-submit:active {
+	top: 3px;
+	box-shadow: inset 0px 3px 0 0 #3ba8c0;
+} 
+
+.btn-reset:active {
+	top: 3px;
+	box-shadow: inset 0px 3px 0 0 #687b8f;
+}

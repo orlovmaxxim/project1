@@ -1,4 +1,24 @@
+.wrap-authorization {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 80px;
+	text-align: center;
+/* 	outline: 1px solid gold; */
+}
+
+.wrap-authorization:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+/* 	outline: 1px solid gold; */
+}
+
 .authorization {
+	display: inline-block;
+	vertical-align: middle;
 	width: 590px;
 	margin: 50px;
 	border-radius: 5px;
@@ -53,7 +73,7 @@
 	color: #82b2c2;
 }
 
-.authorization-form-input::-webkit-input-placeholder { 
+.authorization-form-input::-webkit-input-placeholder {
 	color: #82b2c2;
 	background-color: #fdd5d2;
 }
@@ -63,15 +83,31 @@
 	background-color: #fdd5d2;
 }
 
+.btn-block {
+ text-align: center;
+}
+
 .btn-login {
+	position: relative;
 	border: medium none;
 	outline: 0px none;
-	width: 137px;
-	padding: 8px 18px;
+	width: 200px;
+	margin-bottom: 23px;
+	padding: 3px 18px;
 	font-size: 36px;
 	font-weight: 400;
 	border-radius: 4px;
 	color: #fff;
 	background: #48cbe8 none repeat scroll 0% 0%;
 	box-shadow: inset 0px -3px 0 0 #3ba8c0;
+}
+
+.btn-login:hover {
+	top: 1px;
+	box-shadow: none;
+}  
+
+.btn-login:active {
+	top: 3px;
+	box-shadow: inset 0px 3px 0 0 #3ba8c0;
 }

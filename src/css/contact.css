@@ -7,7 +7,7 @@
 }
 
 .write-me-title {
-	padding: 40px 0;
+	padding: 45px 0;
 	text-align: center;
 	border-bottom: 17px solid #67dffa;
 	font-size: 27px;
@@ -18,9 +18,9 @@
 }
 
 .wrap-form {
-	padding: 0 130px;
-	padding-top: 48px;
-	padding-bottom: 190px;
+	padding: 0 125px;
+	padding-top: 42px;
+	padding-bottom: 200px;
 }
 
 /* .input-blocks {
@@ -28,18 +28,22 @@
 } */
 
 .input-block {
-	margin-bottom: 15px;
+	margin-bottom: 11px;
 }
 
 .input-name-block,
 .input-email-block {
-	width: 180px;
+	width: 190px;
 }
 
 .write-me-form-label {
 	font-size: 19px;
 	font-weight: 300;
 	color: #959aa8;
+}
+
+.pswd-label {
+	font-size: 17px;
 }
 
 .write-me-form-input {
@@ -49,10 +53,15 @@
 	padding-top: 10px;
 	padding-bottom: 11px;
 	padding-left: 10px;
-	width: 100%;
+	width: 97%;
 	font-size: 13px;
 	font-weight: 300;
 	color: #48cbe8;
+}
+
+.pswd-input {
+	margin-top: -3px;
+	padding-top: 3px;
 }
 
 .write-me-form-input::-webkit-input-placeholder { 
@@ -76,7 +85,7 @@
 .captch-pic {
 	overflow: hidden;
 	width: 48%;
-	margin-right: 10%;
+	margin-right: 3%;
 	height: 80px;
 	border: 1px solid #48cbe8;
 	border-radius: 3px;
@@ -89,7 +98,7 @@
 }
 
 .captch-pswd {
-	width: 38%;
+	width: 47%;
 }
 
 .btns-block {

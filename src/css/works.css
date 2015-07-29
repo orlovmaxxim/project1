@@ -1,6 +1,6 @@
 /* ===================== MY-WORKS =================== */
 .wrap-sites {
-	margin-top: 27px;
+	margin-top: 20px;
 }
 
 .sites-list {
@@ -13,21 +13,22 @@
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 38px;
-	margin-left: 25px;
-	width: 183px;
+	margin-bottom: 60px;
+	margin-left: 20px;
+	width: 188px;
 	text-align: center;
 }
 
 .site-pic {
 	position: relative;
 	overflow: hidden;
-	width: 179px;
-	height: 125px;
-	background-color: #4091bb;
+	box-sizing: border-box;
+	width: 183px;
+	height: 127px;
+	margin-bottom: 8px;
 	border: 2px solid #3ba8c0;
 	border-radius: 4px;
-	box-sizing: border-box;
+	background-color: #4091bb;
 }
 
 .site-pic:hover .site-naming{
@@ -85,6 +86,7 @@
 }
 
 .site-description {
+	margin-top: 8px;
 	font-size: 15px;
 	/* font-weight: 300; */
 	color: #4a545d;

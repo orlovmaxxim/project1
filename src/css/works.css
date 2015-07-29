@@ -20,24 +20,61 @@
 }
 
 .site-pic {
+	position: relative;
 	overflow: hidden;
 	width: 179px;
 	height: 125px;
 	background-color: #4091bb;
 	border: 2px solid #3ba8c0;
 	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.site-pic:hover .site-naming{
+  opacity: 1;
+}
+
+.site-pic:hover .site-naming-link {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 .site-photo {
 	width: 100%;
-	/* height: 100%; */
-	transition:all 0.5s ease-in-out;
+	height: 100%;
 }
 
-.site-photo:hover {
-	/* background-color: #4091bb; */
-	opacity: .75;
+.site-naming {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	/* z-index: 2; */
+	opacity: 0;
+	background: rgba(65, 145, 187, 0.75) none repeat scroll 0% 0%;
+	transition: all 0.5s ease-in-out;
 }
+
+.site-naming-link {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 3px 7px;
+	border: 2px solid #eff3f7;
+	font-size: 12px;
+	text-decoration: none;
+	color: #eff3f7;
+	opacity: 0;
+	border-radius: 6px;
+	transform: scale(0);
+	transition: all 0.5s ease-in-out;
+}
+
+/* .site-photo:hover {
+	background-color: #4091bb;
+	opacity: .75;
+} */
 
 .site-address {
 	text-decoration: none;
@@ -51,5 +88,30 @@
 	font-size: 15px;
 	/* font-weight: 300; */
 	color: #4a545d;
+}
+
+.add-new-work {
+	display: block;
+	border: 1px dashed #7cc3d4;
+	text-decoration: none;
+	background: #edf8fc none repeat scroll 0% 0%;
+}
+
+.add-new-work:before,
+.site-naming:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.add-new-work-text {
+	display: inline-block;
+	vertical-align: middle;
+  padding-top: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3ba8c0;
+  background: transparent url(../img/add-work-pic.png) no-repeat scroll center top;
 }
 

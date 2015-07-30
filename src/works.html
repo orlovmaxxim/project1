@@ -141,6 +141,53 @@
               </ul>
             </div>
           </section>
+          
+          <!-- POPUP FORM -->
+          <div id="popup-block">
+            <div class="wrap-popup-block">
+              <header class="popup-header">
+                <div class="close"></div>
+                <h2 class="popup-title">Добавление проекта</h2>
+              </header>
+              <div class="wrap-popup-form">
+                <form id="add-project" class="form-popup" action="http://omaxx.ru" role="form">
+                  <div class="response-alert error-alert"></div>
+                  <div class="response-alert success-alert"></div>
+                  <div class="pop-up-input-blocks">
+                    <div class="input-block input-project-name">
+                      <label class="popup-form-label" for="project-name">Название проекта</label>
+                      <input id="project-name" class="popup-form-input" type="text" name="project-name" placeholder="Введите название">
+                    </div>
+                    <div class="input-block input-project-pic">
+                      <div id="uploadfile" class="uploadfile-wrap">
+                        <span class="span-label">Картинка проекта</span>
+                        <label class="uploadfile-label">
+                          <input id="uploadfile" class="fileupload" type="file" name="files[]">
+                          <input id="fileurl" type="hidden" name="fileurl">
+                        </label>
+                        <input id="filename" class="popup-form-input" name="filename" placeholder="Загрузите изображение" disabled>
+                      </div>
+                    </div>
+                    <div class="input-block input-project-url">
+                      <label class="popup-form-label" for="project-url">URL проекта</label>
+                      <input id="project-url" class="popup-form-input" type="text" name="project-url" placeholder="Добавьте ссылку">
+                    </div>
+                    <div class="input-block input-project-desc">
+                      <label class="popup-form-label" for="project-desc">Описание</label>
+                      <textarea id="project-desc" class="popup-form-input" rows="3" name="textarea" placeholder="Пара слов о вашем проекте"></textarea>
+                    </div>
+                  </div>
+                  <div class="btn-block">
+                    <input class="btn btn-submit" type="submit" value="Добавить">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- end POPUP FORM -->
+          
+
+
       	</div>
 				<!-- end RIGHT BLOCK ABOUT ME -->
      	</div>

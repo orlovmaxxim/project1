@@ -5,7 +5,6 @@
 	top: 0;
 	bottom: 80px;
 	text-align: center;
-/* 	outline: 1px solid gold; */
 }
 
 .wrap-authorization:before {
@@ -13,7 +12,6 @@
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-/* 	outline: 1px solid gold; */
 }
 
 .authorization {
@@ -30,15 +28,15 @@
 	padding: 24px 0;
 	text-align: center;
 	border-bottom: 15px solid #67dffa;
+	font-family: "fira_sansregular", "Arial", sans-serif;
 	font-size: 40px;
-	font-weight: 400;
+	font-weight: normal;
 	border-radius: 5px 5px 0 0;
 	color: #fff;
 	background-color: #48cbe8;
 }
 
 .wrap-form-authorization {
-	/* padding: 0 200px; */
 	padding-top: 25px;
 }
 
@@ -55,8 +53,8 @@
 
 
 .authorization-form-label {
+	font-family: "fira_sansbook", "Arial", sans-serif;
 	font-size: 36px;
-	font-weight: 300;
 	color: #959aa8;
 }
 
@@ -95,8 +93,8 @@
 	margin-bottom: 25px;
 	margin-top: 16px;
 	padding: 4px 0;
+	font-family: "fira_sansbook", "Arial", sans-serif;
 	font-size: 36px;
-	font-weight: 400;
 	border-radius: 5px;
 	color: #fff;
 	background: #48cbe8 none repeat scroll 0% 0%;

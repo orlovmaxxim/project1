@@ -1,6 +1,5 @@
 .write-me {
 	width: 650px;
-  /* padding-bottom: 25px; */
   margin-bottom: 25px;
   border-radius: 5px;
   background-color: #eff3f7;
@@ -10,8 +9,9 @@
 	padding: 45px 0;
 	text-align: center;
 	border-bottom: 17px solid #67dffa;
+	font-family: "fira_sansbook", "Arial", sans-serif;
 	font-size: 27px;
-	font-weight: 400;
+	font-weight: normal;
 	border-radius: 5px 5px 0 0;
 	color: #fff;
 	background-color: #48cbe8;
@@ -22,10 +22,6 @@
 	padding-top: 42px;
 	padding-bottom: 200px;
 }
-
-/* .input-blocks {
-	padding-top: 1px;
-} */
 
 .input-block {
 	margin-bottom: 11px;
@@ -38,7 +34,7 @@
 
 .write-me-form-label {
 	font-size: 19px;
-	font-weight: 300;
+	font-family: "fira_sansbook", "Arial", sans-serif;
 	color: #959aa8;
 }
 
@@ -109,10 +105,11 @@
 	position: relative;
 	border: medium none;
 	outline: 0px none;
-	width: 137px;
-	padding: 8px 18px;
+/* 	width: 137px; */
+	height: 35px;
+	padding: 0px 18px;
+	font-family: "fira_sansbook", "Arial", sans-serif;
 	font-size: 19px;
-	font-weight: 400;
 	border-radius: 4px;
 	color: #fff;
 }

@@ -7,9 +7,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
+  font: normal 1em 'fira_sanslight';
   font-family: "fira_sanslight", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: normal;
   color: #4a545d;
   background: #fbfcfd  url(../img/bg.png) center;
 }
@@ -145,7 +144,7 @@ h2 {
 }
 
 .navigation {
-	margin-bottom: 25px;
+	margin-bottom: 26px;
   font-family: "fira_sansbook", "Arial", sans-serif;
 }
 
@@ -159,7 +158,7 @@ h2 {
 .navigation-i-link {
   display: block;
   position: relative;
-	padding: 23px 30px;
+	padding: 19px 28px;
   font-size: 21px;
   text-decoration: none; 
   color: #959aa8;
@@ -209,9 +208,9 @@ h2 {
 }
 
 .contact-title {
-	padding-left: 19px;
+	padding-left: 20px;
 	padding-top: 11px;
-	padding-bottom: 4px;
+	padding-bottom: 2px;
 	font-size: 21px;
 	font-weight: 400;
 	color: #fbfcfd;
@@ -286,7 +285,7 @@ h2 {
 
 .about-me {
   width: 650px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   margin-bottom: 25px;
   border-radius: 5px;
   background-color: #eff3f7;
@@ -295,11 +294,10 @@ h2 {
 .title {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 10px;
-  padding-bottom: 17px;
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-right: 20px;
+  padding-bottom: 11px;
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-right: 23px;
   font-family: "fira_sansbook", "Arial", sans-serif;
   font-weight: normal;
   font-size: 27px;
@@ -347,7 +345,7 @@ h2 {
 	overflow: hidden;
 	width: 142px;
 	height: 142px;
-	margin-top: 25px;
+	margin-top: 34px;
 	margin-right: 22px;
 	margin-left: 55px;
 	border-radius: 50%;
@@ -361,6 +359,7 @@ h2 {
 .personal-info {
 	width: 400px;
   margin-top: 14px;
+  line-height: 1.3em;
 }
 
 .personal-info-list {

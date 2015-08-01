@@ -320,6 +320,8 @@ h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
+/*   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
+filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand'); */
   left: 38px;
 }
 

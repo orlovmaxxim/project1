@@ -60,7 +60,7 @@
 
 .authorization-form-input {
 	width: 96%;
-	border: 1px solid #82b2c2;
+	border: 1px solid #48cbe8;
 	margin-top: 6px;
 	padding-top: 19px;
 	padding-bottom: 20px;
@@ -68,17 +68,19 @@
 	font-size: 17px;
 	font-weight: 300;
 	border-radius: 3px;
-	color: #82b2c2;
+	color: #48cbe8;
 }
 
 .authorization-form-input::-webkit-input-placeholder {
-	color: #82b2c2;
-	background-color: #fdd5d2;
+	color: #48cbe8;
+	/* color: #82b2c2; */
+	/* background-color: #fdd5d2; */
 }
 
-.authorization-form-input::-moz-placeholder { 
-	color: #82b2c2;
-	background-color: #fdd5d2;
+.authorization-form-input::-moz-placeholder {
+	color: #48cbe8; 
+	/* color: #82b2c2; */
+	/* background-color: #fdd5d2; */
 }
 
 .btn-block {

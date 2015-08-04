@@ -152,15 +152,23 @@
 }
 
 .response-alert {
-
+	display: none;
+	box-sizing: border-box;
+	width: 100%;
+	/* margin-bottom: 6px; */
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 12px;
 }
 
 .error-alert {
-
+	background-color: #f2cccd;
+	color: #f97e76;
 }
 
 .success-alert {
-
+	background-color: #b8e1ce;
+	color: #49bb7b;
 }
 
 .input-block {

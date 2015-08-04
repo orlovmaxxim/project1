@@ -8,6 +8,7 @@ var firstModule = (function() {
 	var _setUpListners = function () {
 		$('#add-new-item').on('click', _showModalWindow); // открытие модального окна по щелчку
 		$('#popup-block div.close').on('click', _closeModalWindow); // закрытие модального окна по щелчку
+		$('#add-project').on('submit', _addNewWork); // добавление нового проекта
 	};
 
 	//открытие всплывающего (модального) окна
@@ -15,6 +16,7 @@ var firstModule = (function() {
 		e.preventDefault();
 
 		popupBlock = $('#popup-block');
+		var form = popupBlock.find('#add-project');
 
 		popupBlock.bPopup({
 				fadeSpeed: 'slow',
@@ -22,13 +24,56 @@ var firstModule = (function() {
 				modalColor: '#818e9b',
 	      transition: 'slideIn',
 	    	transitionClose: 'slideBack',
-	    	escClose: true
+	    	escClose: true,
+	    	onClose: function () {
+	    		form.find('.response-alert').hide();
+	    	}
 		});
 	};
 
 	//закрытие всплывающего (модального) окна 
 	var _closeModalWindow = function () {
 		popupBlock.close();
+	};
+
+	var _addNewWork = function (e) {
+		console.log ("Отклик на добовление проекта работает правильно");
+		e.preventDefault();
+
+		var form = $(this),
+				url = 'add_new_work.php',
+				myServerAnswer = _ajaxUniversalFunc(form, url);
+
+		//аякс запрос на сервер
+		myServerAnswer.done(function(answer){
+			var alertSuccess = form.find('.success-alert'),
+					alertError = form.find('.error-alert');
+
+			if(answer.status === 'OK') {
+				alertError.hide();
+				alertSuccess.text(answer.text).show();
+			} else {
+				alertError.text(answer.text).show();
+				alertSuccess.hide();
+			}
+		})
+	};
+
+var _ajaxUniversalFunc = function(form, url) {
+		//if (!valid) return false;
+
+		data = form.serialize();
+
+		var res = $.ajax({
+			url:url,
+			type: 'POST',
+			dataType: 'json',
+			data:data,
+		}).fail (function(answer){
+			console.log("Problems in PHP");
+			form.find('.error-alert').text('Ошибка на сервере').show();
+		});
+		return res;
 	};
 
 	// возвращаем объект

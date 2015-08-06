@@ -186,6 +186,7 @@ h2 {
   background-color: #3ba8c0;
 }
 
+
 .navigation-i-link:not([class="navigation-i-link active"]):hover {
   color: #3ba8c0;
 }
@@ -229,7 +230,7 @@ h2 {
 	text-decoration: underline;
 }
 
-.icon {
+ .icon {
   display: inline-block;
   width: 100px;
   position: absolute;
@@ -482,3 +483,17 @@ filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, Siz
   background-color: #fad2d1;
   border-color: #82b2c2;
 }
+
+/* For IE8 */
+
+.navigation-i-link:hover {
+  color: #3ba8c0\0/;
+}
+
+.main-navigation .active:hover {
+  color: #fff\0/;
+}
+
+/*   .no-csstransforms .about-me-list-i:before {
+transform: translateY(-50%) translateX(-50%);
+}   */

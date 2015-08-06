@@ -263,3 +263,14 @@
   background-color: #fad2d1;
   border-color: #82b2c2;
 }
+
+/* For IE8 */
+
+.no-csstransforms .site-naming {
+  display: none;
+}
+.no-csstransforms .site-pic:hover .site-naming {
+  display: block;
+  background-color: #4091bb;
+  filter: alpha(Opacity=90);
+}

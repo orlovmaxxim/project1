@@ -259,14 +259,7 @@
 
 /* tooltip custom class */
 
-.myCustomClass {
-	font-size: 13px;
-	color: #fff;
-	border-radius: 3px;
-	border-color: #f97e76;
-}
-
-.has-error {
-	background-color: #fad2d1;
-	border-color: #82b2c2;
+.light-error {
+  background-color: #fad2d1;
+  border-color: #82b2c2;
 }

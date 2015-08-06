@@ -158,7 +158,7 @@ h2 {
 .navigation-i-link {
   display: block;
   position: relative;
-	padding: 19px 25px;
+	padding: 19px 24px;
   font-size: 21px;
   text-decoration: none; 
   color: #959aa8;
@@ -467,4 +467,18 @@ filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, Siz
 	font-size: 13px;
 	font-weight: 300;
   text-align: center;
+}
+
+/* tooltip custom class */
+
+.myCustomClass {
+  font-size: 13px;
+  color: #fff;
+  border-radius: 3px;
+  border-color: #f97e76;
+}
+
+.light-error {
+  background-color: #fad2d1;
+  border-color: #82b2c2;
 }

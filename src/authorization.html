@@ -14,6 +14,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/authorization.css">
 
@@ -31,15 +32,15 @@
 		  <div class="authorization">
 			 <h2 class="authorization-title">Авторизируйтесь</h2>
 			 <div class="wrap-form-authorization">
-				    <form class="authorization-form" action="http://omaxx.ru" method="post">
+				    <form id="add-project" class="authorization-form" role="form">
 					   <div class="authorization-input-blocks">
 						  <div class="input-block input-login-block">
 							 <label class="authorization-form-label" for="login">Логин</label>
-							 <input class="authorization-form-input" type="text" placeholder="Введите логин" qtip-content="введите логин" name="login" id="login">
+							 <input class="authorization-form-input" type="text" placeholder="Введите логин" qtip-content="введите логин" qtip-position="left" name="login" id="login" >
 						  </div>
 						  <div class="input-block input-pswrd-block">
 							 <label class="authorization-form-label" for="pswrd">Пароль</label>
-							 <input class="authorization-form-input" type="password" placeholder="Введите пароль" qtip-content="введите пароль" name="pswrd" id="pswrd">
+							 <input class="authorization-form-input" type="password" placeholder="Введите пароль" qtip-content="введите пароль" qtip-position="left" name="pswrd" id="pswrd">
 						  </div>
 					   </div>
 					   <div class="btn-block">
@@ -64,6 +65,9 @@
     <script type="text/javascript" src="bower/jquery/jquery.js"></script>
     <script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src = "bower/qtip2/jquery.qtip.js"></script>
+    <script type="text/javascript" src = "js/add_new_work.js"></script>
+    <script type="text/javascript" src = "js/tooltips.js"></script>
 </body>
 
 </html>

@@ -5,8 +5,19 @@ var validator = (function(){
 	};
 
 	var _setUpListeners = function () {
-		
+		$('form').on('keydown', '.light-error', _delLightError);
+		$('form').on('reset', _resetForm);
 	}
+
+	var _resetForm = function (form) {
+		var form = $(this);
+		form.find('input, textarea').trigger('resetTooltips');
+		form.find('.light-error').removeClass('light-error');
+	}
+
+	var _delLightError = function(){
+		$(this).removeClass('light-error');
+	};
 
 	var _viewTooltip = function (input, location) {
 			switch (location) {
@@ -23,16 +34,7 @@ var validator = (function(){
 			}
 			break;
 		}
-/*		location = {
-			my: 'center right',
-			at: 'center left'
-		}
-		if (location === 'right'){
-			location.adjust.method = 'Flip';
-			location.my: 'center left';
-			location.at: 'center right';
-		}
-*/
+
 		input.qtip({
 			content: {
 				text: function(){
@@ -43,7 +45,7 @@ var validator = (function(){
 				event: 'show'
 			},
 			hide: {
-				event: 'unfocus'
+				event: 'keydown resetTooltips'
 			},
 			position: location,
 			style: {
@@ -60,10 +62,9 @@ var validator = (function(){
 
 		console.log('Валидация - проверка формы');
 
-		var inputs = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
+		var inputs = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"], input[id="filename"]'),
 				valid = true;
 
-		/*$each jquery func - изменить!*/
 		$.each(inputs, function(index, val){
 			console.log(index);
 			console.log(val);
@@ -73,8 +74,7 @@ var validator = (function(){
 
 			if (val.length === 0) {
 
-				 //сюда вставить для обводки красным
-				 element.addClass('has-error');
+				 element.addClass('light-error');
 				_viewTooltip(element, pos);
 				valid = false;
 			}

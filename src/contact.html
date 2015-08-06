@@ -13,6 +13,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contact.css">
 
@@ -93,19 +94,19 @@
       		<section class="write-me">
             <h2 class="write-me-title">У вас интересный проект? Напишите мне</h2>
             <div class="wrap-form">
-              <form class="write-me-form" action="http://omaxx.ru" method="post">
+              <form id="add-project" class="write-me-form" role="form">
                 <div class="input-blocks clearfix">
                   <div class="input-block input-name-block f-l">
                     <label class="write-me-form-label" for="name">Имя</label>
-                    <input class="write-me-form-input" type="text" placeholder="Как к Вам обращиться" name="name" id="name">
+                    <input class="write-me-form-input" type="text" placeholder="Как к Вам обращиться" name="name" id="name" qtip-content="Вы не ввели имя" qtip-position="left">
                   </div>
                   <div class="input-block input-email-block f-r">
                     <label class="write-me-form-label" for="email">Email</label>
-                    <input class="write-me-form-input" type="email" placeholder="Куда мне писать" name="email" id="email">
+                    <input class="write-me-form-input" type="email" placeholder="Куда мне писать" name="email" id="email" qtip-content="Вы не ввели email" qtip-position="right">
                   </div>
                   <div class="input-block input-msg-block">
                     <label class="write-me-form-label" for="msg">Сообщение</label>
-                    <textarea class="write-me-form-input" name="textarea" rows="10" placeholder="Кратко в чем суть" id="msg"></textarea>
+                    <textarea class="write-me-form-input" name="textarea" rows="10" placeholder="Кратко в чем суть" id="msg" qtip-content="Ваш вопрос" qtip-position="left"></textarea>
                   </div>
                 </div>
                 <label class="pswd-label write-me-form-label" for="pswd">Введите код, указанный на картинке</label>
@@ -114,12 +115,12 @@
                     <img class="captch-pic-code" src="img/captch-code.png" alt="captch-code">
                   </div>
                   <div class="captch captch-pswd">
-                    <input class="write-me-form-input pswd-input" type="text" name="pswd" id="pswd">
+                    <input class="write-me-form-input pswd-input" type="text" name="pswd" placeholder="Введите код" id="pswd" qtip-content="Вы не ввели код" qtip-position="right">
                   </div>
                 </div>
                 <div class="btns-block clearfix">
-                  <input type="submit" class="btn btn-submit f-l" value="Отправить">
-                  <input type="reset" class="btn btn-reset f-r" value="Очистить">
+                  <input class="btn btn-submit f-l" type="submit" value="Отправить">
+                  <input class="btn btn-reset f-r" type="reset" value="Очистить">
                 </div>
               </form>
             </div>  
@@ -144,7 +145,11 @@
 </footer>
 <!-- end FOOTER -->
 <script type="text/javascript" src = "bower/jquery/jquery.js"></script>
-<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src = "bower/jquery-placeholder/jquery.placeholder.js"></script>
 <script type="text/javascript" src = "js/main.js"></script>
+<script type="text/javascript" src = "bower/qtip2/jquery.qtip.js"></script>
+<!-- <script type="text/javascript" src = "js/contact_me.js"></script> -->
+<script type="text/javascript" src = "js/add_new_work.js"></script>
+<script type="text/javascript" src = "js/tooltips.js"></script>
 
 </body>

@@ -44,7 +44,8 @@ var firstModule = (function() {
 				url = 'add_new_work.php',
 				myServerAnswer = _ajaxUniversalFunc(form, url);
 
-		//аякс запрос на сервер
+		//аякс запрос на сервер - в начале проверка, был ли зпрос на сервер
+		if (myServerAnswer) {
 		myServerAnswer.done(function(answer){
 			var alertSuccess = form.find('.success-alert'),
 					alertError = form.find('.error-alert');
@@ -55,8 +56,9 @@ var firstModule = (function() {
 			} else {
 				alertError.text(answer.text).show();
 				alertSuccess.hide();
-			}
-		})
+				}
+			})
+		}
 	};
 
 var _ajaxUniversalFunc = function(form, url) {

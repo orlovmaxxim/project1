@@ -60,15 +60,17 @@ var firstModule = (function() {
 	};
 
 var _ajaxUniversalFunc = function(form, url) {
-		//if (!valid) return false;
+
+		console.log ("Ajax запрос с проверкой");
+		if (!validator.validationForm(form)) return false;
 
 		data = form.serialize();
 
 		var res = $.ajax({
-			url:url,
+			url: url,
 			type: 'POST',
 			dataType: 'json',
-			data:data,
+			data: data,
 		}).fail (function(answer){
 			console.log("Problems in PHP");
 			form.find('.error-alert').text('Ошибка на сервере').show();

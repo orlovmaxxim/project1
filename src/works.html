@@ -13,13 +13,13 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/works.css">
 
   <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
-
 <!--[if lt IE 7]>  
 	<p class="browsehappy">Пожалуйста, <a href="http://browsehappy.com/">обновите</a> ваш браузер.</p>
 <![endif]-->
@@ -159,7 +159,7 @@
                   <div class="pop-up-input-blocks">
                     <div class="input-block input-project-name">
                       <label class="popup-form-label" for="project-name">Название проекта</label>
-                      <input id="project-name" class="popup-form-input" type="text" name="project-name" placeholder="Введите название">
+                      <input id="project-name" class="popup-form-input" type="text" name="project-name" placeholder="Введите название" qtip-content="блаблабла" qtip-position="left">
                     </div>
                     <div class="input-block input-project-pic">
                       <div id="uploadfile" class="uploadfile-wrap">
@@ -173,11 +173,11 @@
                     </div>
                     <div class="input-block input-project-url">
                       <label class="popup-form-label" for="project-url">URL проекта</label>
-                      <input id="project-url" class="popup-form-input" type="text" name="project-url" placeholder="Добавьте ссылку">
+                      <input id="project-url" class="popup-form-input" type="text" name="project-url" placeholder="Добавьте ссылку" qtip-content="блаблабла" qtip-position="left">
                     </div>
                     <div class="input-block input-project-desc">
                       <label class="popup-form-label" for="project-desc">Описание</label>
-                      <textarea id="project-desc" class="popup-form-input" rows="3" name="textarea" placeholder="Пара слов о вашем проекте"></textarea>
+                      <textarea id="project-desc" class="popup-form-input" rows="3" name="textarea" placeholder="Пара слов о вашем проекте" qtip-content="блаблабла" qtip-position="right"></textarea>
                     </div>
                   </div>
                   <div class="btn-block">
@@ -212,8 +212,10 @@
 <!-- end FOOTER -->
 <script type="text/javascript" src = "bower/jquery/jquery.js"></script>
 <script type="text/javascript" src = "bower/bpopup/jquery.bpopup.js"></script>
-<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src = "bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript" src = "bower/qtip2/jquery.qtip.js"></script>
 <script type="text/javascript" src = "js/main.js"></script>
-<script type="text/javascript" src="js/add_new_work.js"></script>
+<script type="text/javascript" src = "js/add_new_work.js"></script>
+<script type="text/javascript" src = "js/tooltips.js"></script>
 
 </body>

@@ -255,4 +255,18 @@
 .btn-submit:active {
 	top: 3px;
 	box-shadow: inset 0px 3px 0 0 #3ba8c0;
-} 
+}
+
+/* tooltip custom class */
+
+.myCustomClass {
+	font-size: 13px;
+	color: #fff;
+	border-radius: 3px;
+	border-color: #f97e76;
+}
+
+.has-error {
+	background-color: #fad2d1;
+	border-color: #82b2c2;
+}

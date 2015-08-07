@@ -494,6 +494,15 @@ filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, Siz
   color: #fff\0/;
 }
 
+.about-me-list-i:before {
+  top: 15%\0/;
+  left: 20px\0/;
+}
+
+.icon {
+  top: 30%\0/;
+}
+
 /*   .no-csstransforms .about-me-list-i:before {
 transform: translateY(-50%) translateX(-50%);
 }   */

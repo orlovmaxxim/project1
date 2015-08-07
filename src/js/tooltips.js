@@ -7,6 +7,14 @@ var validator = (function(){
 	var _setUpListeners = function () {
 		$('form').on('keydown', '.light-error', _delLightError);
 		$('form').on('reset', _resetForm);
+
+		/*добавляем картинку и удаляем тултип*/
+		$('.fileupload').on('change', function () {
+			var input = $(this),
+				name = input[0].files[0].name; // имя загруженного файла
+			$('#filename').val(name); 
+			$('#filename').trigger('resetTooltips').removeClass('light-error');
+		});
 	}
 
 	var _resetForm = function (form) {
@@ -62,8 +70,8 @@ var validator = (function(){
 
 		console.log('Валидация - проверка формы');
 
-		var inputs = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"], input[id="filename"]'),
-				valid = true;
+		var inputs = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
+				valid = true; /*, input[id="filename"]*/
 
 		$.each(inputs, function(index, val){
 			console.log(index);
@@ -72,7 +80,7 @@ var validator = (function(){
 					val = element.val();
 					pos = element.attr('qtip-position');
 
-			if (val.length === 0) {
+			if (!val.length) {
 
 				 element.addClass('light-error');
 				_viewTooltip(element, pos);

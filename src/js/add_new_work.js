@@ -27,6 +27,8 @@ var firstModule = (function() {
 	    	escClose: true,
 	    	onClose: function () {
 	    		form.find('.response-alert').hide();
+	    		form.find('input, textarea').qtip('destroy', true);
+        	form.trigger('reset');
 	    	}
 		});
 	};
